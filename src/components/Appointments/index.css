@@ -1,0 +1,119 @@
+/* Write your CSS here */
+.appointments-background-container {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+.appointments-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+}
+.appointments-top-section {
+  display: flex;
+  flex-direction: column;
+}
+.form-container {
+  width: 100%;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+  color: #171f46;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.label {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  color: #b5b7c4;
+  margin-bottom: 5px;
+}
+
+.input {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  color: #b5b7c4;
+  border: 1px solid #b5b7c4;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+}
+.appointments-text-section {
+  width: 100%;
+}
+.appointments-image {
+  display: none;
+}
+.add-button {
+  background-color: #8b5cf6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+.separator {
+  border: 1px solid #b5b7c4;
+  background-color: #b5b7c4;
+  margin-bottom: 20px;
+}
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.starred-button {
+  background-color: transparent;
+  color: #9897f0;
+  border: 1px solid #9897f0;
+  border-radius: 20px;
+  padding: 10px 24px;
+}
+.active-starred-button {
+  background-color: #9897f0;
+  color: #ffffff;
+}
+.appointment-bottom-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .appointments-background-container {
+    padding: 100px 50px;
+  }
+  .appointments-container {
+    padding: 100px;
+  }
+  .appointments-top-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+  .appointments-text-section {
+    width: 40%;
+  }
+  .appointments-image {
+    width: 40%;
+    display: inline-block;
+  }
+  .appointment-bottom-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0px;
+  }
+}
